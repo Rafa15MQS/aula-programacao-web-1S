@@ -1,0 +1,40 @@
+.container{
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 200px;
+}
+
+.item{
+    background-color: blueviolet;
+    color: white;
+    font-weight: bold;
+    margin: 5px;
+    padding: 20px;
+}
+
+.container-area{
+    display: grid;
+    grid-template-areas:
+    "header header"
+    "sidenav main"
+    "footer  footer";
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 80px 1fr 80px;
+}
+
+.header{
+    grid-area: header;
+    background-color: beige;
+}
+.sidenav{
+    grid-area: sidenav;
+    background-color: aquamarine;
+}
+.main{
+    grid-area: main;
+    background-color: white;
+}
+.footer{
+    grid-area: footer;
+    background-color: blue;
+}
